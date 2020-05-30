@@ -9,6 +9,7 @@ rvm:
   - jruby-1.7.27
   - jruby-9.1.17.0
   - jruby-head
+  - truffleruby
 
 env:
   matrix:
@@ -20,6 +21,7 @@ matrix:
     - rvm: jruby-1.7.27
     - rvm: jruby-9.1.17.0
     - rvm: jruby-head
+    - rvm: truffleruby
   include:
     - rvm: 2.4 # lowest from rvm list above
       env: TASK=rubocop
